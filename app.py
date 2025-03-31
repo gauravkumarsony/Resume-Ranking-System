@@ -11,8 +11,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Download NLTK resources
-nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')  # If POS tagging is used
+nltk.download('wordnet')
 
 # Set page config
 st.set_page_config(
