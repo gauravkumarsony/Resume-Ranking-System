@@ -7,6 +7,7 @@ from io import BytesIO
 import re
 import nltk
 # Download NLTK resources
+nltk.download('all')
 nltk.download('punkt')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
