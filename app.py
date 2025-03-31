@@ -5,10 +5,13 @@ import numpy as np
 import PyPDF2
 from io import BytesIO
 import re
+import os
 import nltk
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+nltk.data.path.append(os.path.abspath("nltk_data"))
 
 # Download NLTK resources
 nltk.download('punkt')
