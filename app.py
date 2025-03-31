@@ -6,15 +6,14 @@ import PyPDF2
 from io import BytesIO
 import re
 import nltk
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 # Download NLTK resources
 nltk.download('all')
 nltk.download('punkt')
 nltk.download('stopwords')
-from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
     
 # Set page config
 st.set_page_config(
