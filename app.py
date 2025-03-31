@@ -5,20 +5,23 @@ import numpy as np
 import PyPDF2
 from io import BytesIO
 import re
-import os
 import nltk
-from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-
-nltk.data.path.append(os.path.abspath("nltk_data"))
-
 # Download NLTK resources
 nltk.download('punkt')
 nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')  # If POS tagging is used
-nltk.download('wordnet')
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
+def preprocess_text(text):
+    text = re.sub(r'[^a-zA-Z\s]', '', text.lower())
+    tokens = word_tokenize(text)  # Ensure nltk.download('punkt') is called earlier
+    stop_words = set(stopwords.words('english'))
+    filtered_tokens = [word for word in tokens if word not in stop_words]
+    return ' '.join(filtered_tokens)
+    
 # Set page config
 st.set_page_config(
     page_title="Resume Screening AI",
