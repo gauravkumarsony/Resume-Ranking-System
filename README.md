@@ -42,7 +42,39 @@ This **AI-powered Resume Screening and Ranking System** helps recruiters and hir
 3. Run the Streamlit app:  
    ```bash
    streamlit run app.py
-   ```  
+   ```
+---
+
+## 📸 Screenshots
+
+
+
+---
+
+## 🌟 Support & Contribution
+
+If you find this project useful, please consider: ✅ **Giving a Star ⭐** to the repository\
+✅ **Forking the repo 🔄** and contributing\
+✅ **Following me on GitHub 🏆** for more cool projects!\
+✅ **Sharing it with your friends & colleagues** 🚀
+
+---
+
+## 📬 Contact
+
+For queries or suggestions, feel free to reach out: 📧 **Email:** [gauravsony67@gmail.com](mailto\:gauravsony67@gmail.com)\
+🔗 **LinkedIn:** [Gaurav Kumar](https://linkedin.com/in/gauravkumarsony)\
+📂 **GitHub:** [Gaurav Kumar](https://github.com/gauravkumarsony)
+
+---
+
+**Author: Gaurav Kumar**\
+**Technology:** NLP & Machine Learning\
+**Model:** Resume Screening & Ranking AI with Scikit-Learn
+
+🎯 *"Automating resume screening for smarter hiring decisions!"*
+
+
 
 ### **📜 Author**  
 **Gaurav Kumar** | **MCA Student & AI Enthusiast**  
